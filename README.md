@@ -1,6 +1,6 @@
 # Healthcare-Optimization-System
 
-A Java Swing and Oracle SQL-based Hospital Management System designed to streamline patient, doctor, and admin workflows. This system enables login, registration, appointment booking, and appointment status viewing functionalities through a GUI developed in NetBeans.
+A Java Swing and Oracle SQL-based Healthcare-Optimization-System designed to streamline patient, doctor, and admin workflows. This system enables login, registration, appointment booking, and appointment status viewing functionalities through a GUI developed in NetBeans.
 
 ## 📌 Project Overview
 
