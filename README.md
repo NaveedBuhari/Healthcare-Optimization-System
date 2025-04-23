@@ -1,6 +1,6 @@
 # Healthcare-Optimization-System
 
-A Java Swing and Oracle SQL-based Healthcare-Optimization-System designed to streamline patient, doctor, and admin workflows. This system enables login, registration, appointment booking, and appointment status viewing functionalities through a GUI developed in NetBeans.
+A Java Swing and Oracle SQL-based Healthcare Optimization System designed to streamline patient, doctor, and admin workflows. This system enables login, registration, appointment booking, and appointment status viewing functionalities through a GUI developed in NetBeans.
 
 ## 📌 Project Overview
 
@@ -20,7 +20,7 @@ This project was created as part of a DBMS lab mini-project. It covers the devel
 
 ## 📁 Project Structure
 
-Healthcare-Optimization-System/ │ ├── Login1.java # Login frame ├── BookAppointment.java # Appointment booking UI for patients ├── ViewAppointments.java # View and pay appointments ├── ViewAppointmentsDoctor.java # Doctor's appointment view ├── Register1.java # Patient registration ├── Register2.java # Doctor registration ├── AdminHome.java # Admin dashboard ├── FindMyID.java # Forgot ID module └── OracleTables.sql # SQL schema (not included but recommended)
+Healthcare Optimization System/ │ ├── Login1.java # Login frame ├── BookAppointment.java # Appointment booking UI for patients ├── ViewAppointments.java # View and pay appointments ├── ViewAppointmentsDoctor.java # Doctor's appointment view ├── Register1.java # Patient registration ├── Register2.java # Doctor registration ├── AdminHome.java # Admin dashboard ├── FindMyID.java # Forgot ID module └── OracleTables.sql # SQL schema (not included but recommended)
 
 
 ## 🧑‍⚕️ User Roles
