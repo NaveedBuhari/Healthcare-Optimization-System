@@ -59,6 +59,7 @@ HospitalManagementSystem/
    -- In SQL*Plus or SQL Developer:
    @path/to/hospital_schema.sql
 3. Use the following credentials in your Java files (or modify as needed):
+   ```bash
    String url = "jdbc:oracle:thin:@localhost:1521:orcl";
    String username = "SCOTT";
    String password = "tiger";
@@ -66,7 +67,7 @@ HospitalManagementSystem/
 🧑‍💻 Running the App
 1. Open the project in NetBeans.
 2. Add ojdbc8.jar to your project libraries:
-- Right-click project → Properties → Libraries → Add JAR/Folder
+   - Right-click project → Properties → Libraries → Add JAR/Folder
 3. Set Login1.java as the main class.
 4. Run the project.
 
