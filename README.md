@@ -1,84 +1,84 @@
-# Healthcare-Optimization-System
+# 🏥 Health Care Optimization System
 
-A Java Swing and Oracle SQL-based Healthcare Optimization System designed to streamline patient, doctor, and admin workflows. This system enables login, registration, appointment booking, and appointment status viewing functionalities through a GUI developed in NetBeans.
+A full-fledged desktop-based health care optimization system developed using Java Swing (NetBeans) and Oracle SQL. The project facilitates efficient handling of patient and doctor data, appointment scheduling, and administrative controls within a healthcare environment.
 
 ## 📌 Project Overview
 
-This project was created as part of a DBMS lab mini-project. It covers the development of a functional desktop-based hospital management solution using Java (Swing) and Oracle DB. Key operations include:
+This application was created as part of a DBMS mini-project. It uses Java for the frontend GUI and Oracle DB for backend storage. It supports three user roles (Admin, Doctor, Patient) and includes full CRUD operations for appointments, registrations, and login management.
 
-- Login and registration for patients, doctors, and admins
-- Booking appointments by patients
-- Viewing appointments and updating status by doctors
-- Admin interface for system overview
+## 🧑‍⚕️ Core Functionalities
 
-## 🖥️ Technologies Used
+- Patient registration and login
+- Doctor registration and login
+- Admin dashboard view
+- Appointment booking by patients
+- Appointment review by doctors
+- View appointment status and payment
+- Retrieve forgotten user ID using phone number
 
-- **Frontend**: Java Swing (NetBeans IDE)
-- **Backend**: Oracle SQL
-- **Database Connector**: JDBC
+## 🛠️ Technologies Used
+
+- **Frontend**: Java Swing (NetBeans GUI Builder)
+- **Backend**: Oracle Database
+- **Database Connector**: Oracle JDBC (`ojdbc8.jar`)
 - **IDE**: NetBeans
 
-## 📁 Project Structure
+## 🗂️ Project Structure
 
-Healthcare Optimization System/ │ ├── Login1.java # Login frame ├── BookAppointment.java # Appointment booking UI for patients ├── ViewAppointments.java # View and pay appointments ├── ViewAppointmentsDoctor.java # Doctor's appointment view ├── Register1.java # Patient registration ├── Register2.java # Doctor registration ├── AdminHome.java # Admin dashboard ├── FindMyID.java # Forgot ID module └── OracleTables.sql # SQL schema (not included but recommended)
+HospitalManagementSystem/
+│
+├── src/
+│   ├── Login1.java
+│   ├── Register1.java
+│   ├── Register2.java
+│   ├── BookAppointment.java
+│   ├── ViewAppointments.java
+│   ├── ViewAppointmentsDoctor.java
+│   ├── AdminHome.java
+│   ├── FindMyID.java
+│
+├── resources/
+│   └── bg4.jpg (background image if available)
+│
+├── lib/
+│   └── ojdbc8.jar (Oracle JDBC driver)
+│
+├── hospital_schema.sql
+├── README.md
+└── .gitignore
 
 
-## 🧑‍⚕️ User Roles
 
-- **Patient**: Register, login, book appointments, view appointment status, pay bills
-- **Doctor**: View assigned appointments and their details
-- **Admin**: View system status and manage appointments
+## 🧾 Setup Instructions
 
-## ⚙️ Setup Instructions
+### 📁 Database Setup
 
-1. **Database Setup**:
-   - Ensure Oracle DB is installed.
-   - Create necessary tables: `Patient`, `Doctor`, `Admin`, `Appointment`, `Service`.
-   - Set credentials in code:
-     ```
-     url = "jdbc:oracle:thin:@localhost:1521:orcl"
-     username = "SCOTT"
-     password = "tiger"
-     ```
+1. Install Oracle Database and run it.
+2. Use `hospital_schema.sql` to create required tables:
+   ```sql
+   -- In SQL*Plus or SQL Developer:
+   @path/to/hospital_schema.sql
+3. Use the following credentials in your Java files (or modify as needed):
+   String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+   String username = "SCOTT";
+   String password = "tiger";
 
-2. **Code Execution**:
-   - Open project in NetBeans.
-   - Run `Login1.java` or `Register1.java` to begin.
+🧑‍💻 Running the App
+1. Open the project in NetBeans.
+2. Add ojdbc8.jar to your project libraries:
+- Right-click project → Properties → Libraries → Add JAR/Folder
+3. Set Login1.java as the main class.
+4. Run the project.
 
-> ⚠️ Ensure Oracle JDBC driver is added to your project libraries in NetBeans.
+🌱 Future Enhancements
+- Encrypt passwords and improve validation
+- Implement role-based session management
+- Notifications via email/SMS
+- Improved UI design (flat theme)
 
-## 🧪 Modules & Screens
+📄 License
+This project is for academic use only. You're free to modify and extend it for personal learning or submission.
 
-### ✅ Login Screen (`Login1.java`)
-- Validates user ID and role
-- Redirects to appropriate homepage (Patient, Doctor, Admin)
 
-### 📝 Register Screens
-- `Register1.java`: Patient registration
-- `Register2.java`: Doctor registration with service specialization
-
-### 📅 Book Appointment (`BookAppointment.java`)
-- Patient selects a service and date
-- Entry saved to the `Appointment` table
-
-### 👁️ View Appointment Status
-- `ViewAppointments.java`: Shows patient appointments, payment status
-- `ViewAppointmentsDoctor.java`: Doctor's view of assigned appointments
-
-### 🛠️ Admin View (`AdminHome.java`)
-- Displays admin name
-- Access to view appointments and manage statuses
-
-### 🔍 Forgot My ID (`FindMyID.java`)
-- Retrieve user ID using registered phone number
-
-## 🧯 Future Enhancements
-
-- Role-based session management
-- Notification system (email/SMS)
-- Improved validation and password encryption
-- UI/UX improvements with modern design
-
-## 📄 License
-
-This project is for academic use only. Modify and extend as needed for your own learning or academic submissions.
+🙌 Acknowledgements
+This project was developed as part of a university DBMS course. Special thanks to faculty for guidance and peers for testing and feedback.
